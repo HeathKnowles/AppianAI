@@ -1,8 +1,8 @@
-flask==2.0.3
+flask
 numpy==1.21.6
-joblib==1.1.0
-groq==1.0.1
-torch==1.13.1
+joblib
+groq
+torch
 transformers==4.24.0
 werkzeug==2.1.2
 PyPDF2==1.26.0
