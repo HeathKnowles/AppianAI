@@ -1,0 +1,396 @@
+2024 Asia Pacific Conference on Innovation in Technology (APCIT)
+Mysuru, India. Jul 26-27, 2024
+Predictive Healthcare with Integrated EEG and Facial
+Emotion Recognition using Deep Learning and
+Transfer Learning
+1Shashank Mahato 2*Dr. Saranyaraj D
+Department of Electronics and Communication Engineering, Associate professor, School of Computer Science and Engineering,
+Amrita School of Engineering, Amrita Vishwa Vidyapeetham, Vellore Institute of Technology,
+Chennai, India Chennai, India.
+ch.en.u4cce21031@ch.students.amrita.edu *saranyaraj.d@vit.ac.in
+*Corresponding Author
+Abstract— The main objective of this innovative project is to improving the creation of treatment paradigms as well as
+transform modern-day neurological healthcare, additionally restructuring the way the respective communities of patients
+pairing and synchronizing EEG signals with facial recognition are supported. A multifaceted approach to research promises to
+information for efficient detection of neurological sicknesses. yield better results to the affected parties through gaining a
+Machine learning algorithms are used for promptitude, ensuring more fundamental understanding of the origins of neurological
+rapid interventions during the course of the disease, and for diseases [3].
+careful and efficient balancing of the patient’s conditions. The
+system based on the above-discussed approach is characterized Neurological diseases include a wide range of symptoms,
+by a patient-centered nature ensuring that trust and ethical which greatly affect the lives of the patients. Motor symptoms
+liability are the top priorities of the developed model. Such accompany with tremors, bradykinesia, muscle rigidity and
+system supported by multiple machine learning algorithms also non-motor symptoms like depression and cognitive impairment
+increase the accuracy of the diagnosis, its potential for early can be seen in patients with Parkinson’s Disease . Common
+identification, and targeted therapy, ultimately having a presentation of epilepsy is in seizure along with an aura,
+beneficial effect on the public health. The researches findings confusion and loss of awareness . Brain Tumors cause
+demonstrate that there are convincing proofs that machine persistent Headache, Seizures, Cognitive , changes and
+learning can be used for predictive healthcare: VGG19 achieved
+Sensory changes. At times, the symptoms result in depression
+86.28%, Random Forest Classifier 94.48%, and for epilepsy,
+[4]. The later involves persistent sadness, changes in appetite
+Random Forest and Gradient Boosting for brain tumors 92.12%
+and sleep, fatigue, death recurrent thoughts. A perfect diagnosis
+and for Parkinson’s disease 90.52%, respectively. Ensembled
+is important to ensure timely and optimal management of each
+EEG analysis had the accuracy of 91.83%. Importantly, a result
+specific patients. . It also would guide a more individualized
+of 82.51% accuracy was achieved with the final decision-making
+approach to managements. Such an approach in turn would
+process using transfer learning with the method of ensembled
+enhance the quality of life of the patient.
+models and VGG19. Thus, it is possible to conclude that different
+machine learning algorithms are effective in predictive Neurological conditions have an impact on millions around
+healthcare and can promote the progress of medical technology
+the world. Parkinson’s disease between 7 and 10 million people,
+to benefit public health.
+epilepsy affects 50 million, brain tumors afflict approximately
+230,000 people every year, and depression affects over 260
+Keywords—EEG, Facial Recognition, Machine Learning,
+million. Access to healthcare is heavily correlated to disease
+Depression, Epilepsy, Brain Tumors, Parkinson’s disease, Random
+burden and mortality. Millions of people in India are affected
+Forest Classifier, Gradient Boosting Classifier, Ensembling,
+by the above neurological conditions and more, while access to
+VGG19, Transfer Learning.
+quality neurological care still varies so underdeveloped
+I. INTRODUCTION infrastructure and raised awareness is necessary [5].
+Neurological diseases include a broad range of both
+II. METHODOLOGY
+physical and mental conditions and present profound disorders
+of human well-being [1]. Parkinson’s disease, epilepsy, brain This research paper provides a clearer understanding of
+tumors, and depression all provide unique challenges ranging Parkinson’s disease, epilepsy, brain tumors, and depression,
+from a diagnosis of the motor system of Parkinson’s, the their causes, symptoms, treatments, and impacts on society [6].
+recurrent seizures of epilepsy, symptoms of brain tumors such The current paper reports the method that has been used to
+as headaches and seizures, as well as the constant anxiety and analyze literature and gather empirical data to provide insight
+sadness of depression. The approach to these diseases varies regarding these neurological diseases.
+greatly from medication and lifestyle changes to surgery and
+A. Dataset description
+therapy. All of the previously mentioned, however, share
+The collection includes 35,685 grayscale face pictures sized
+instances of complexity and require multidisciplinary
+48x48 pixels, grouped by emotions like happiness, neutrality,
+approaches [2]. Their deeply interwoven causes, whether their
+grief, rage, surprise, contempt, and fear. It's broken into train
+basis in genetics, biology, environment, or psychology, is
+and test sets. Additionally, there are CSV files with recordings
+979-8-3503-6153-7/24/$31.00 ©2024 IEEE 1from 500 individuals, grouped into Parkinson's illness, epilepsy, based on the idea of applying knowledge gained from one task
+brain tumors, and depression sections. Each participant's file to another similar one. It allows us to transfer learned
+contains EEG recordings sampled into 4097 data points over representations to another model in such a way that it may
+23.6 seconds. reach convergence faster and demonstrate better performance
+in cases when the amount of labeled data is insufficient. We
+applied both these methods and transferred the weights from
+VGG19 to the ensembled model, which significantly
+contributed to the optimization of performance and adaptability
+of the latter.
+Fig. 1. Dataset [Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise]
+B. Model Training and Evaluation
+The dataset was evaluated for feature extraction using pre-
+trained CNN models such as VGG19 and machine learning
+algorithms, including Random Forest and Gradient Boosting,
+for discriminating between various subtypes of neurological
+diseases. Fine-tuning was performed and features were used for
+classification within fully connected layers. The evaluation of
+the model was measured through evaluation metrics and
+Ensembling methods were used to combine predictions for
+improvement in accuracy [7]. An additional average
+Ensembling method was utilized following all the machine
+learning algorithms for an improvement in classification results.
+A performance comparison was also involved between the
+Fig. 3. Proposed Model Architecture
+facial and EEG evaluations and the VGG19 and the Ensembled
+model were also considered for transfer learning for maximum III. RELATED WORKS
+efficiency and applicability.
+Deep learning has seen various innovations and impacts of
+C. Model Architecture new frameworks on medical image analysis. Wang, Li, and
+Xiao introduced a deep learning framework of Multiple
+The VGG19 architecture was proposed by Simonyan and
+Genetic Syndromes Recognition by using ResNet Architecture
+Zisserman in the year 2014. It comprisesof 19 layers designed
+and Transfer Learning with Cross-loss Training Method.
+in a very deep and uniform manner. The 3×3 small sized
+However, the authors admitted that there were convergence
+receptive field is used at the core of its architecture that is
+issues with the deeper network. The technology is accurate by
+advantageous to improve the tangible reduction. The
+a percentage of 93.50%, which means that it will have a
+architecture recommended more number of layer sets with 3×3
+significant role in genetic disease diagnosis [9]. On the other
+filters followed by the 2×2 max pooling. Therefore, it is best at
+hand, Jin, Wang, and He came up with a deep learning transfer
+effective feature extraction, leading to the best performance for
+technology of a deep transfer learning technology of deep
+many applications including image classification and object
+facial technology to address the problem of insufficient data. It
+recognition. Its depth and simple structure have made it a better
+is not possible to assess the accuracy value since one was not
+choice for learning.
+provided. An impressive 90% accuracy raises the question of
+ethical data usage by participants and the fact that the dataset is
+relatively small for broader applications [10]. Besides,
+technology has also evolved in the process so that there were
+many improvements contributing to increased accuracy. For
+instance, Yu et al. presented an Automated Depression
+Diagnosis system using deep networks, which encode facial
+expressionsand dynamics. The idea may not work well in real-
+life applications due to the computational costs, as mentioned
+by the authors [11]. The Deep Network achieved promising
+cross-user accuracy, demonstrating a high probability of
+diagnosing Depression Disorder. This approach incorporated
+Fig. 2. VGG19Architecture Facial Identification by a systematic review and meta-analysis
+performance of different deep learning and machine learning
+Ensembling is the process of combining predictions from networks conducted by Kong. This approach had a
+various models, such as Random Forest classifiers and performance accuracy of 91%[12].
+Gradient Boosting Classifiers [8]. It can significantly improve
+the model’s overall performance through a diversity of An investigation of facial expressions in Alzheimer’s
+modeling. We can achieve that by averaging predictions, disease was strongly conducted by Seidl et al. Though the
+stacking models, or using bagging and boosting. By using study was limited in terms of generalizability, the insights that
+Ensembling, it becomes easier to avoid the overfitting risk and the authors managed to offer have proven very valuable for
+capture more apparent patterns in data. Transfer learning is Alzheimer’s disease research [13]. The non-invasive nature of
+2the EEG technology has opened numerous opportunities for Surprise 0.65 0.79 0.71 170
+diagnosis evaluation for various neurological disorders, as was macro avg 0.82 0.82 0.82 1334
+shown by Salem. The accuracy level achieved was p < 0.001 weighted avg 0.83 0.83 0.83 1334
+[14]. An early depression diagnosis system based on the Ant
+Lion Optimization algorithm and k-NN classifier as presented
+by Tian is likely to produce a very impressive effect in
+depression diagnosis, with an accuracy of 90.70% [15]. The
+EEG Parkinson’s disease recognition system developed by
+Chang basically on the attention-based sparse graph
+convolutional neural network has also illustrated a number of
+PD-related biomarkers achieved an accuracy of 87.67% [16].
+Li proposed a new method for the extraction of latent
+factors of EEGs and their identification with the ultimate
+purpose of diagnosing Alzheimer’s disease. The overall
+accuracy of the new procedure was equal to 98.10% [17]. Also,
+Liu developed an original method for diagnosing Parkinson’s
+disease with the use of an EEG Brain Network. The precision
+value of the novel method was equal to 0.908 characteristics,
+which achieves particularly important results [18].
+Fig. 4. VGG19Validation Confusion Matrix
+IV. RESULTS B. EEG Depression – Random Forest Classifier:
+On the point of actual application of the suggested Prior to this, the efficacy of EEG data in epilepsy detection
+algorithm, it would be said that the process should commence was explored, using a Random Forest Classifier. Due to the
+by collecting EEG signals and facial recognition data from unique patterns detected in the EEG recordings, resulting in a
+patients using specialized sensors and cameras. The data high validation accuracy of 90.22%, the Random Forest
+should be pretreated to remove noise and artifacts and initiate Classifier proved to be a suitable method for correctly
+the extraction of important features in both data modalities. detecting epileptic seizures. This again points to the benefit of
+Then, machine learning models, for instance, Random Forest machine learning algorithms in the analysis of EEG signals to
+or Gradient Boosting, should be trained and their performance allow for increased accuracy, and therefore immediate
+validated based on the features extracted from data sources. diagnosis, of neuropsychological disorders.
+Afterward, ensemble models should be built to enhance the
+models’ accuracy. In the end, the trained models should be TABLE II. EEGDEPRESSION VALIDATION REPORT
+embedded into a real-time monitoring system and clinicians
+EEG Depression (RFC)
+should be provided with user-friendly interfaces to support
+Class precision recall f1-score support
+their use. The system should be deployed in healthcare
+Depressed 0.95 0.99 0.97 11207
+installations, however, it should be continuously monitored so Not Depressed 0.93 0.76 0.84 2560
+that the models are behaving ethically and be very cautious macro avg 0.94 0.87 0.90 13767
+regarding patients’ privacy. For instance, it should be ensured weighted avg 0.94 0.94 0.94 13767
+that no pictures of faces are permanently stored on a server or
+shared. If found that the model canbe no longer used, ithas to
+iteratively rerun the previously mentioned procedure to enable
+optimal patient care.
+A. Facial Recognition - VGG19:
+One of the most significant successes in the field of deep
+emotion recognition is using deep learning, in particular, it is
+possible to speak about the capabilities of the CNN architecture
+named VGG19, leading to the results of the present research,
+which obtained an accuracy of 86.28% using VGG19 in the
+identification of facial emotions.
+TABLE I. VGG19VALIDATION REPORT
+VGG19
+Fig. 5. EEG Depression Validation Confusion Matrix
+Class precision recall f1-score support
+Angry 0.80 0.81 0.81 73 C. EEG Epilepsy – Random Forest Classifier:
+Disgust 0.87 0.87 0.87 23
+In the study, the Random Forest Classifier worked out well
+Fear 0.83 0.83 0.83 205
+in confirmation that EEG information was valuable in the early
+Happy 0.92 0.84 0.88 356
+identification of epilepsy. For this purpose, the statistical
+Neutral 0.86 0.86 0.86 248
+Sad 0.81 0.77 0.79 259 machine learning tool was in a position to interpret the unique
+3features observed from the various EEG recorders and E. EEG Parkinson’s Disease – Gradient Boosting Classifier
+managed to record a fantastic validation of around 90.22%.
+In transforming neurological healthcare, we have
+investigated the utilization of EEG data for the detection of
+TABLE III. EEGEPILEPSY VALIDATION REPORT Parkinson’s disease using a Gradient Boosting Classifier.
+EEG Epilepsy (RFC) Specifically, the generated patterns on the EEG signals that
+Class precision recall f1-score support illustrate the Parkinson’s disease contributed to a relatively
+Not Epilepsy 0.91 0.89 0.90 6985 high accuracy of the validation 90.52%.
+Epilepsy 0.88 0.90 0.89 6281
+macro avg 0.90 0.90 0.90 13266 TABLE V. EEGPARKINSON’S VALIDATION REPORT
+weighted avg 0.90 0.90 0.90 13266
+EEG Parkinson’s Disease (GBC)
+Class precision recall f1-score support
+Not Parkinsons 0.86 0.79 0.82 3528
+Parkinsons 0.92 0.95 0.93 10099
+macro avg 0.90 0.90 0.91 13627
+weighted avg 0.89 0.87 0.88 13627
+Fig. 6. EEG Epilepsy Validation Confusion Matrix
+D. EEG Tumor – Random Forest Classifier:
+EEG Data has been applied to the tumor detection problem
+with the Random Forest Classifier. Data is collected in the
+form of EEG recordings and the recordings are analyzed to
+find abnormalities that will indicate the presence of a brain
+tumor. The Random Forest Classifier achieved a validation
+Fig. 8. EEG Parkinson’s Validation Confusion Matrix
+accuracy of 92.12%. It can be observed that such machine
+learning algorithms can identify neurological diseases like
+brain tumors helping them to efficiently cure these diseases.
+F. EEG Ensembled – Average Ensembling method
+learning.
+TABLE IV. EEGTUMOR VALIDATION REPORT
+EEG Tumor (RFC) In an attempt to promote neurological healthcare, we made
+Class Precision Recall F1-score Support a study that investigated the use of EEG data analysis
+Not Tumor 0.88 0.94 0.91 5574 techniques in combination with the Average Ensembling
+Tumor 0.95 0.90 0.93 7693 method, the investigated approach showed impressing
+Macro avg 0.92 0.92 0.92 13267
+validation accuracy equal to 91.83% for diagnosing
+Weighted avg 0.91 0.92 0.92 13267
+neurological disorders.
+TABLE VI. EEGENSEMBLED VALIDATION REPORT
+EEG Ensembled (Average Ensembling)
+Class precision recall f1-score support
+Normal 0.97 0.97 0.97 2854
+Depressed 0.98 0.86 0.92 2851
+Epilepsy 0.91 0.95 0.93 2608
+Tumor 0.96 0.94 0.95 2570
+Parkinsons 0.95 0.95 0.95 2578
+macro avg 0.92 0.92 0.92 12580
+weighted avg 0.92 0.92 0.92 12580
+Fig. 7. EEG Tumor Validation Confusion Matrix
+4VGG19 showed a great outcome of 86.28% accuracy of
+emotional recognition, making it good for the recognition of
+facial expressions. The Results of Random Forest Classifier
+were quite high; they composed 94.48% of depression
+sensitivity and 90.22 of epilepsy sensitivity respectively. In
+addition, the result of both random forest and gradient boosting
+classifier indicated that they were correct in 92.12% of brain
+tumors’ recognition and in 90.52% Parkinson’s disease
+recognition. With the resulting accuracy of 91.83%. The
+combination of transfer learning, ensembled models, and
+VGG19 played a significant role in the final decision-making
+to attain an 82.51% accuracy. This suggests that pre-trained
+models can be used to improve classification outcomes in
+neurological diseases.
+Fig. 9. EEG Ensembled Validation Confusion Matrix
+G. Final Decision Model – Transfer Learning (Ensembled +
+VGG19) - Results
+For the purpose of our work and comprehensive research
+aimed at neurology healthcare development, a Final Decision
+Model based on Transfer Learning approach was created. This
+model utilizes a proven VGG19 CNN architecture and
+combines it with ensemble learning methods. As a result as
+described in figure 11, I obtained a model which is able to
+diagnose the issue with a accuracy of 82.51%. Therefore, this Fig. 11.Simulation results
+approach can be used to develop better diagnosis methods and
+improve the ability to treat patients with neurological health TABLE VIII. COMPARISON OF DIFFERENT MODELS
+illnesses.
+Accuracies(%)
+Architecture Database Test Validation
+TABLE VII. FINAL DECISION MODEL VALIDATION REPORT
+Accuracy Accuracy
+VGG19 Facial Recognition -
+Final Decision Model (Transfer Learning Images 86.37 86.28
+Class precision recall f1-score support Random Forest Depression - EEG 95.01 94.44
+Classifier
+Normal 0.88 0.87 0.85 2470
+Random Forest
+Epilepsy 0.88 0.85 0.86 1896 Epilepsy – EEG 90.89 90.22
+Classifier
+Depressed 0.90 0.88 0.89 3248 Random Forest
+Brain Tumors – EEG 93.56 92.12
+Tumor 0.86 0.93 0.89 2734 Classifier
+Parkinsons 0.93 0.90 0.91 3177 Gradient Boosting Parkinson’s Disesae -
+91.68 90.52
+macro avg 0.89 0.88 0.89 13525 Classifier EEG
+weighted avg 0.89 0.88 0.89 13525 Average Ensembled EEG (All 92.41 91.83
+Ensembling EEG Data)
+Transfer Learning
+Facial Images + EEG 83.10 82.51
+(with Ensembled)
+Fig. 12. Analogy of Architectures in our Model
+Fig. 10.Final Decision Model Validation Confusion Matrix
+5V. CONCLUSION [6] Bhat, Shreya, et al. "Parkinson's disease: Cause factors, measurable
+indicators, and early diagnosis." Computers in biology and medicine 102
+Overall, we carefully compared different models and (2018): 234-241.
+methods with each other and found specific features where [7] Mahbod, Amirreza, et al. "Fusing fine-tuned deep features for skin
+each tool is the best. In particular, VGG19 was an outstanding lesion classification." Computerized Medical Imaging and Graphics 71
+facial emotion recognition tool, and the Random Forest (2019): 19-29.
+Classifier was the best classifier for depression, epilepsy, and [8] Sahin, Emrehan Kutlug. "Assessing the predictive capability of
+other diseases. The Random Forest and Gradient Boosting ensemble tree methods for landslide susceptibility mapping using
+XGBoost, gradient boosting machine, and random forest." SN Applied
+Classifiers were both accurate for classifying brain tumor cases
+Sciences 2.7 (2020): 1308.
+and Parkinson’s disease. As for the Ensembling models,
+[9] Wang, Jianfeng, et al. "Multiple genetic syndromes recognition based on
+metrics also confirmed the advantages of combining models
+a deep learning framework and cross-loss training." IEEE Access 10
+for predicting conditions. Another finding is that the integration (2022): 117084-117092.
+of transfer learning into our ensemble models and VGG19 [10] Jin, Bo, Leandro Cruz, and Nuno Gonçalves. "Deep facial diagnosis:
+produced great results, a notable increase in classification deep transfer learning from face recognition to facial diagnosis." IEEE
+accuracy. Thus, our study shows that while a versatile approach Access 8 (2020): 123649-123661.
+to the problem is vital, the advances in machine learning may [11] Zhu, Yu, et al. "Automated depression diagnosis based on deep networks
+to encode facial appearance and dynamics." IEEE Transactions on
+show us the true ways of diagnosing and managing
+Affective Computing 9.4 (2017): 578-584.
+neurological disorders. It means that further learning and
+[12] Kong X, Wang Z, Sun J, Qi X, Ding X, et al. Facial Recognition for
+research in the crossover between machine learning and
+Disease Diagnosis Using a Deep Learning Convolutional Neural
+healthcare can provide ample opportunities for the future of Network: A systematic Review and MetaAnalysis. J Fam Med. 2024;
+healthcare and allow people to approach diagnosis, 11(1): 1345.
+management, and treatment in a new, more patient-centered, [13] Seidl, Ulrich, et al. "Facial expression in Alzheimer’s disease: Impact of
+way. The future scope of this research has the potential to cognitive deficits and neuropsychiatric symptoms." American Journal of
+advance by investigating the capabilities of real-time Alzheimer's Disease & Other Dementias® 27.2 (2012): 100-106.
+monitoring and the potential of wearable technologies to [14] Salem, Lise Cronberg, et al. "Quantitative electroencephalography as a
+diagnostic tool for Alzheimer's dementia in adults with Down
+improve early detection and personalized therapy [19-22].
+syndrome." Dementia and geriatric cognitive disorders extra 5.3 (2015):
+404-413.
+ACKNOWLEDGMENT
+[15] Tian, Fuze, et al. "The three-lead eeg sensor: Introducing an eeg-assisted
+We are so excited and grateful to thank all the people who depression diagnosis system based on ant lion optimization." IEEE
+made the finish of this research so great. So, we would like to Transactions on Biomedical Circuits and Systems (2023).
+thank our mentors or adviser who guided us well and provided [16] Chang, Hongli, et al. "EEG-Based Parkinson's Disease Recognition via
+Attention-Based Sparse Graph Convolutional Neural Network." IEEE
+us with good ideas for the study. We accept our thankfulness to
+Journal of Biomedical and Health Informatics (2023).
+our participants, whose great cooperation made possible the
+[17] Li, Kai, et al. "Feature extraction and identification of Alzheimer’s
+development of our current study. Finally, I would thank the
+disease based on latent factor of multi-channel EEG." IEEE
+institution, whose facilities were key in enabling the Transactions on Neural Systems and Rehabilitation Engineering 29
+completion of the project. (2021): 1557-1567.
+[18] Liu, Shengnan, et al. "Brain network analysis by stable and unstable
+REFERENCES EEG components." IEEE Journal of Biomedical and Health
+Informatics 25.4 (2020): 1080-1092.
+[1] Board on Global Health, and Committee on Nervous System Disorders
+in Developing Countries. Neurological, psychiatric, and developmental [19] D. Saranyaraj, M. Manikandan, ‘Early prediction of breast cancer based
+disorders: Meeting the challenge in the developing world. National on the classification of HER-2 and ER biomarkers using deep neural
+Academies Press, 2001. network’, Published online in Multimedia Tools and Application on 03
+June 2023. Expert Systems (2023).
+[2] Bischoff, Stephan C., et al. "Towards a multidisciplinary approach to
+understand and manage obesity and related diseases." Clinical [20] Saranyaraj, D., Vaisshale, R., NandhaKishore, R. (2023). Region of
+nutrition 36.4 (2017): 917-938. Interest and Feature-based Analysis to Detect Breast Cancer from a
+Mammogram Image. In: Hassanien, A.E., Castillo, O., Anand, S., Jaiswal,
+[3] Olesen, Jes, et al. "Consensus document on European brain
+A. (eds) International Conference on Innovative Computing and
+research." Journal of Neurology, Neurosurgery & Psychiatry 77.suppl 1
+Communications. ICICC 2023. Lecture Notes in Networks and Systems,
+(2006): i1-i49.
+vol 703. Springer, Singapore.
+[4] Alentorn, Agusti, Khê Hoang-Xuan, and Tom Mikkelsen. "Presenting
+[21] Saranyaraj, D. "Image De-noising and Edge Segmentation using Bilateral
+signs and symptoms in brain tumors." Handbook of clinical
+Filtering and Gabor-cut for Edge Representation of a Breast Tumor."
+neurology 134 (2016): 19-26.
+2022 International Conference on Engineering and Emerging
+[5] Khan, F., et al. "Neurorehabilitation in developing countries: challenges Technologies (ICEET). IEEE, 2022.
+and the way forward." Phys Med Rehabil Int 2.9 (2015): 1070.
+[22] D. Saranyaraj, M. Manikandan, ‘A deep convolutional neural network for
+the early detection of breast carcinoma with respect to hyper-parameter
+tuning’, Multimed Tools Appl (2018).
+6
